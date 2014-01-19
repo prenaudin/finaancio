@@ -1,0 +1,45 @@
+<article class="accounts-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-4">
+        <h3>Accounts</h3>
+        <ul>
+          {{#each accountEntries itemController="entryEdit"}}
+            <li>
+              {{input value=name  }}
+              {{input value=value }}
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+      <div class="col-xs-4">
+        <h3>Monthly charge</h3>
+        <ul>
+          {{#each monthlyEntries}}
+            <li>
+              {{input value=name }}
+              {{input value=value }}
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+      <div class="col-xs-4">
+        <h3>Bills to come</h3>
+        <ul>
+          {{#each futureEntries}}
+            <li>
+              {{input value=name }}
+              {{input value=value }}
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-3 col-xs-offset-9">
+        Total : {{total}}
+      </div>
+    </div>
+  </div>
+</article>

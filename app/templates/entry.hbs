@@ -1,0 +1,18 @@
+<h1>Entry</h1>
+
+<table>
+  {{#each model.attributes}}
+  <tr>
+    <td>
+      <strong>{{this.key}}:</strong>
+    </td>
+    <td>
+      {{this.value}}
+    </td>
+  </tr>
+  {{/each}}
+</table>
+
+{{#linkTo 'entry.edit' model}}Change{{/linkTo}}
+
+{{outlet}}

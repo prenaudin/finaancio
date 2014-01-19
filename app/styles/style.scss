@@ -1,0 +1,94 @@
+@import "bootstrap-sass/lib/bootstrap";
+
+$color-lightBrown: #8a7044; // %Shadow(Green)
+$color-brown:      #665031; // %Dallas(Brown)
+
+$color-black:      #333;
+$color-white:      #fff;
+
+$color-red:        #CC2A41;
+
+// #d0a659 // %Apache(Brown)
+// #a88047 // %Muddy Waters(Brown)
+// #9a843e // %Highball(Green)
+// #ead7b6 // %Champagne(Brown)
+// #908a2c // %Lemon Ginger(Yellow)
+
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Grand Hotel', cursive;
+  font-size: 80px;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+header {
+  color: #fff;
+  background-image: url('/images/header-background.jpg');
+  padding: 30px 0 60px 0;
+  background-size: cover;
+  background-position: -20%;
+}
+
+.try-now {
+  $buttonWidth: 140px;
+  background-color: $color-red;
+  color: $color-white;
+  width: $buttonWidth;
+  height: $buttonWidth;
+  border-radius: $buttonWidth/2;
+  line-height: $buttonWidth;
+  text-align: center;
+  font-family: 'Grand Hotel';
+  font-size: 36px;
+  margin: 0 auto;
+  margin-bottom: -130px;
+}
+
+.accounts-container {
+  margin-top: 100px;
+  margin-bottom: 200px;
+
+  h3 {
+    margin-bottom: 30px;
+  }
+
+  ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    input[type="text"]:first-child {
+      text-align: left;
+    }
+
+    input[type="text"]:last-child {
+      text-align: right;
+    }
+
+    input[type="text"] {
+      border: 0;
+      font-size: 16px;
+      border-bottom: 2px solid transparent;
+
+      &:focus {
+        outline: 0;
+        border: 0;
+        border-bottom: 2px solid $color-red;
+      }
+    }
+  }
+}
